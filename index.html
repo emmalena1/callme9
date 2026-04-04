@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Titel der Seite -->
+        <title>Emmas Seite</title>
+        
+        <!-- verweis auf die reset.css - entfernt alle default styles des browsers -->
+        <!-- kann auch gelöscht werden -->
+        <link rel="stylesheet" href="./assets/css/reset.css">
+
+        <!-- verweis auf unser css -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    
+    <body><!--
+        <div class="background-image">
+            <img src="assets/media/hintergrund.avif">
+        </div>
+        -->
+        <section class="headline">
+            <img src="assets/media/callme-stern-gelb.avif">
+            
+
+            <!-- FILTER -->
+        <div class="filter-buttons">
+            <button id="toggleAll" data-toggle="all">Alle</button>
+            <button id="toggleInteraction" data-toggle="interactiondesign">Interactiondesign</button>
+            <button id="toggleType" data-toggle="type">Typedesign</button>
+            <button id="toggleEditorial" data-toggle="editorial">Editorialdesign</button>
+            <button id="toggleBrand" data-toggle="brand">Branddesign</button>
+            <button id="toggleTypografie" data-toggle="typografie">Typografie</button>
+            <button id="toggleFotografie" data-toggle="fotografie">Fotografie</button>
+            <button id="toggleZBM" data-toggle="zbm">ZBM</button>
+            <button id="toggleMalerei" data-toggle="malerei">Malerei</button>
+        </div>  
+
+            <div class="marginLeft">
+                <!--
+                <img src="assets/media/telefon-rand.avif">
+            -->
+                <div class="infos">
+                    <button>About</button>
+                    <button>Index</button>
+                    <button>Raumplan</button>
+                    <button>Programm</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Container für alle Bilder -->
+         
+
+
+        <!-- verweis auf unser javascript -->
+        <script src="assets/js/script.js">
+        </script>
+
+        <!-- js random bilder -->
+        <script>
+
+            document.querySelectorAll(".layout img").forEach(img => {
+                const randomImage = images[Math.floor(Math.random() * images.length)];
+                img.src = randomImage;
+            });
+        
+        </script>
+
+    </body>
+</html>
