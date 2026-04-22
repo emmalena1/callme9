@@ -51,5 +51,14 @@ document.addEventListener("mousemove", (e) => {
   `;
 });
 
+// Card beim Klicken umschalten (verstecken/anzeigen)
+document.addEventListener("click", () => {
+  if (card.style.display === "none") {
+    card.style.display = "block";
+  } else {
+    card.style.display = "none";
+  }
+});
+
 
 

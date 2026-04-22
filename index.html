@@ -13,9 +13,6 @@
 
         <!-- verweis auf unser css -->
         <link rel="stylesheet" href="./assets/css/style.css">
-
-        <!-- verweis auf js für den vierten raum -->
-        <script src="https://dervierteraum.org/connect"></script> (https://dervierteraum.org/connect%E2%80%9D)
     </head>
     
     <body><!--
@@ -24,7 +21,7 @@
         </div>
         -->
         <section class="headline">
-            <img src="assets/media/callme-stern-gelb.avif">
+            <img src="assets/media/callme-gelb.webp">
             
 
             <!-- FILTER -->
@@ -45,18 +42,123 @@
                 <img src="assets/media/telefon-rand.avif">
             -->
                 <div class="infos">
-                    <button>About</button>
+                    <button onclick="document.getElementById('overlay-about').classList.add('aktiv')">About</button>
+
+
+                    <div id="overlay-about" onclick="if(event.target===this) this.classList.remove('aktiv')">
+                        <div class="modal">
+                            <button class="schliessen" onclick="document.getElementById('overlay-about').classList.remove('aktiv')">&#x2715;</button>
+                            <p>
+                                Die 9. Absolvierendenausstellung Kommunikationsdesign BA und MA der HAW Hamburg.
+                            </p>
+                            <p>
+                                Unter dem Motto Handshake statt LinkedIn: Das Weiterreichen einer Visitenkarte verbindet. Von Hand zu Hand, ganz persönlich. Ein kleiner Austausch mit großer Wirkung.
+                            </p>
+                        </div>
+                    </div>
+
                     <button>Index</button>
                     <button>Raumplan</button>
-                    <button>Programm</button>
+
+                    <button onclick="document.getElementById('overlay-programm').classList.add('aktiv')">Programm</button>
+
+                    <div id="overlay-programm" onclick="if(event.target===this) this.classList.remove('aktiv')">
+                        <div class="modal">
+                            <button class="schliessen" onclick="document.getElementById('overlay-programm').classList.remove('aktiv')">&#x2715;</button>
+
+                            <div class="abschnitt-titel">ÖFFNUNGSZEITEN</div>
+                            <table>
+                                <tr><td class="datum">23.4.</td><td>18:00 – 22:00</td></tr>
+                                <tr><td class="datum">24.4.</td><td>14:00 – 19:00</td></tr>
+                                <tr><td class="datum">25.4.</td><td>14:00 – 19:00</td></tr>
+                                <tr><td class="datum">26.4.</td><td>12:00 – 16:00</td></tr>
+                            </table>
+
+                            <div class="abschnitt-titel">PROGRAMM</div>
+                            <table>
+                                <tr>
+                                <td class="datum">23.4.</td>
+                                <td class="zeit">18:00</td>
+                                <td>Vernissage<br>+ Afterparty</td>
+                                </tr>
+                                <tr>
+                                <td class="datum">24.4.</td>
+                                <td class="zeit">19:00</td>
+                                <td>Play the System<br>Buch-Release<br>+ Afterparty</td>
+                                </tr>
+                                <tr>
+                                <td class="datum">25.4.</td>
+                                <td class="zeit">ab 10:00</td>
+                                <td>Workshops<br>+ Afterparty</td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
 
         <!-- Container für alle Bilder -->
-         
+        <section class="layout">
+            <div class="type"><a href="carl-kurtz.html"><img src="assets/media/carl-kurtz/carl-kurtz-titelbild.webp" class="img-1" alt="Carl Kurtz"></a></div>
+            <div class="typografie"><a href="julia-biedasiek.html"><img src="assets/media/julia-biedasiek/julia-biedasiek-titelbild-c-jana-konrad.webp" class="img-2"></a></div>
+            <div class="fotografie"><a href="nora-handsley.html"><img src="assets/media/nora-handsley/nora-handsley-titelbild.webp" class="img-3"></a></div>
+            <div class="zbm"><a href="tay-kirchner.html"><img src="assets/media/tay-kirchner/tay-kirchner-titelbild.webp" class="img-4"></a></div>
+            <div class="zbm"><a href="david-kienle.html"><img src="assets/media/david-kienle/david-kienle-titelbild.webp" class="img-5"></a></div>
+            <div class="fotografie"><a href="emily-hein.html"><img src="assets/media/emily-hein/emily-hein-titelbild.webp" class="img-6"></a></div>
+            <div class="malerei"><a href="tabea-mertens.html"><img src="assets/media/tabea-mertens/tabea-mertens-titelbild.webp" class="img-7"></a></div>
+            <div class="type"><a href="meret-lafin.html"><img src="assets/media/meret-lafin/meret-lafin-titelbild.webp" class="img-8"></a></div>
+            <div class="interactiondesign"><a href="fabian-stenzel.html"><img src="assets/media/fabian-stenzel/fabian-stenzel-titelbild.webp" class="img-9"></a></div>
+            <div class="typografie"><a href="alina-stegemann.html"><img src="assets/media/alina-stegemann/alina-stegemann-titelbild.webp" class="img-10"></a></div>
 
+            <div class="editorial"><a href="friederike-temme.html"><img src="assets/media/friederike-temme/friederike-temme-titelbild.webp" class="img-7"></a></div>
+            <div class="zbm"><a href="cindy-reiche.html"><img src="assets/media/cindy-reiche/cindy-reiche-titelbild.webp" class="img-6"></a></div>
+            <div class="typografie"><a href="saige-hippeli.html"><img src="assets/media/saige-hippeli/saige-hippeli-titelbild.webp" class="img-10"></a></div>
+            <div class="zbm"><a href="emma-levin.html"><img src="assets/media/emma-levin/emma-levin-titelbild.webp" class="img-8"></a></div>
+            <div class="zbm"><a href="silvia-schmidt.html"><img src="assets/media/silvia-schmidt/silvia-schmidt-titelbild.webp" class="img-2"></a></div>
+            <div class="zbm"><a href="sarah-roehlen.html"><img src="assets/media/sarah-roehlen/sarah-roehlen-titelbild.webp" class="img-4"></a></div>
+            <div class="malerei"><a href="laya-boeker.html"><img src="assets/media/laya-boeker/laya-boeker-titelbild.webp" class="img-7"></a></div>
+            <div class="typografie"><a href="simon-bode.html"><img src="assets/media/simon-bode/simon-bode-titelbild.png" class="img-4"></a></div>
+            <div class="typografie"><a href="saskia-hess.html"><img src="assets/media/saskia-hess/saskia-hess-titelbild.webp" class="img-9"></a></div>
+            <div class="zbm"><a href="felix-willnauer.html"><img src="assets/media/felix-willnauer/felix-willnauer-titelbild.png" class="img-2"></a></div>
+
+            <div class="typografie editorial"><img src="assets/media/typo-editorial-stegemann-alina.avif" class="img-4"></div>
+            <div class="typografie"><img src="assets/media/typo-hess-saskia.avif" class="img-2"></div>
+            <div class="zbm"><img src="assets/media/zbm-wiesenberg-giacomo.avif" class="img-7"></div>
+            <div class="editorial"><img src="assets/media/editorial-mercado-eliana.avif" class="img-1"></div>
+            <div class="typografie"><img src="assets/media/typo-konrad-jana.avif" class="img-6"></div>
+            <div class="zbm"><img src="assets/media/zbm-renner-leonie.avif" class="img-3"></div>
+            <div class="zbm"><img src="assets/media/zbm-levin-emma.avif" class="img-5"></div>
+            <div class="typografie editorial"><img src="assets/media/foto-langenhoff-jo.avif" class="img-1"></div>
+            <div class="typografie"><img src="assets/media/springub-enka1.png" class="img-3"></div>
+            <div class="typografie"><img src="assets/media/typo-hess-saskia.avif" class="img-2"></div>
+
+            <div class="zbm"><a href="kaethebaduva.html"><img src="assets/media/david-kienle/david-kienle-1.webp" class="img-5" alt="Kaethe Baduva project portfolio piece, showcasing design work from April 23-26, 2026, part of the Frappant exhibition collection"></a></div>
+            <div class="fotografie"><img src="assets/media/foto-springub-enka.avif" class="img-6"></div>
+            <div class="zbm"><img src="assets/media/zbm-reiche-cindy.avif" class="img-7"></div>
+            <div class="malerei"><img src="assets/media/malerei-boeker-lara.avif" class="img-8"></div>
+            <div class="foto"><img src="assets/media/foto-hartung-jan-louis.avif" class="img-9"></div>
+            <div class="zbm"><img src="assets/media/zbm-roehlen-sarah-ann.avif" class="img-10"></div>
+            <div class="editorial"><img src="assets/media/typo-editorial-stegemann-alina.avif" class="img-1"></div>
+            <div class="foto"><img src="assets/media/foto-baatz-helena.avif" class="img-2"></div>
+            <div class="foto"><img src="assets/media/foto-handsley-nora.avif" class="img-3"></div>
+            <div class="foto"><img src="assets/media/foto-hein-emily.avif" class="img-4"></div>
+
+            <div class="type"><a href="carl-kurtz.html"><img src="assets/media/carl-kurtz/carl-kurtz-titelbild.webp" class="img-1" alt="Carl Kurtz"></a></div>
+            <div class="typografie"><a href="julia-biedasiek.html"><img src="assets/media/julia-biedasiek/julia-biedasiek-titelbild-c-jana-konrad.webp" class="img-2"></a></div>
+            <div class="fotografie"><a href="nora-handsley.html"><img src="assets/media/nora-handsley/nora-handsley-titelbild.webp" class="img-3"></a></div>
+            <div class="zbm"><a href="tay-kirchner.html"><img src="assets/media/tay-kirchner/tay-kirchner-titelbild.webp" class="img-4"></a></div>
+            <div class="zbm"><a href="david-kienle.html"><img src="assets/media/david-kienle/david-kienle-titelbild.webp" class="img-5"></a></div>
+            <div class="fotografie"><a href="emily-hein.html"><img src="assets/media/emily-hein/emily-hein-titelbild.webp" class="img-6"></a></div>
+            <div class="malerei"><a href="tabea-mertens.html"><img src="assets/media/tabea-mertens/tabea-mertens-titelbild.webp" class="img-7"></a></div>
+            <div class="type"><a href="meret-lafin.html"><img src="assets/media/meret-lafin/meret-lafin-titelbild.webp" class="img-8"></a></div>
+            <div class="interactiondesign"><a href="fabian-stenzel.html"><img src="assets/media/fabian-stenzel/fabian-stenzel-titelbild.webp" class="img-9"></a></div>
+            <div class="typografie"><a href="alina-stegemann.html"><img src="assets/media/alina-stegemann/alina-stegemann-titelbild.webp" class="img-10"></a></div>
+
+
+          </section>
 
         <!-- verweis auf unser javascript -->
         <script src="assets/js/script.js">
