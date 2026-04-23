@@ -539,7 +539,6 @@ td {
     padding: 0 0 2em 0;
     text-align: left;
     margin-top: 2em;
-    
   }
 
   .text p {
@@ -594,20 +593,6 @@ td {
   }
 }
 
-.container {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  width: 70vw;
-  height: auto;
-  aspect-ratio: 3 / 2;
-  transform: translate(-50%, -50%);
-  perspective: 1200px;
-}
-
-.
-
-
 /* ===================== */
 /* INDEX - MOBILE        */
 /* ===================== */
@@ -628,7 +613,7 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #dddf4b;
+    background-color: #a5c1c9;
     font-family: Messina, sans-serif;
     font-size: 1.2em;
     text-align: center;
@@ -640,15 +625,23 @@ td {
 /* LARGE DESKTOP (27")   */
 /* ===================== */
 
+@media (min-width: 1800px) {
 
+  .container {
+    width: 55vw;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
 
-  @media (min-width: 1800px) {
+  .layout {
+    max-width: calc(100vw - 10em);
+    gap: 4rem;
+  }
 
-  
-    
-
-  /* ... rest bleibt gleich */
-}
+  .layout img {
+    width: 300px;
+    height: 194px;
+  }
 
   .background-images img {
     width: 35em;
@@ -683,28 +676,10 @@ td {
   .back-button img {
     width: 55px;
   }
-
-  @media (min-width: 1800px) {
-
-  .container {
-    width: 55vw;
-    height: auto;
-    aspect-ratio: 3 / 2;
-  }
-
-  .layout {
-    max-width: calc(100vw - 10em);
-    gap: 5rem;
-  }
-
-  .layout img {
-    width: 300px;
-    height: 194px;
-
-  /* ... rest bleibt gleich */
 }
 
-  .layout img {
-    width: 220px;
-    height: 142px;
-  }
+
+
+
+
+
