@@ -1,5 +1,6 @@
 body {
   background:#a5c1c9;
+  
   margin: 0;
   position: relative;
 }
@@ -390,6 +391,14 @@ td {
   padding-left: 50px;
 }
 
+.big-letters {
+  padding-bottom: 1em;
+}
+
+.wo-denn {
+  padding-top: 1em;
+}
+
 .telefon-wrapper {
   display: flex;
   align-items: center;
@@ -398,6 +407,7 @@ td {
 
 .telefon-wrapper img {
   width: 100px;
+  height: 98px;
   transition: transform 0.1s;
 }
 
@@ -419,7 +429,7 @@ td {
   padding: 10px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 60px; 
+  border-radius: 100px; 
 }
 
 
@@ -438,24 +448,6 @@ td {
 
 }
 
-.ort {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  padding: 18px 10px;
-  font-size: 18px;
-  font-family: messina;
-  display: flex;
-  align-items: baseline;
-}
-
-.ort img {
-  height: 60px;
-  bottom: 0px;
-  left: 0px;
-  padding-right: 10px;
-  
-}
 
 
 
@@ -465,14 +457,254 @@ td {
 
 .portfolio {
   position: fixed;
-  padding: 18px 10px;
-  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   font-family: messina;
   text-decoration: underline;
   margin-top: 100px;
   font-size: 18px;
   right: 0px;
   bottom: 0px;
-  background-color:#dddf4b;
+  background-color: #fadceb;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  width: 100px;
+  text-align: center;
+  border-radius: 60px;
 }
 
+.klein {
+  font-size: 14px;
+}
+
+
+/* ===================== */
+/* MOBILE RESPONSIVE     */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  /* Scrollen erlauben */
+  .einzelansicht {
+    overflow: auto;
+  }
+
+  /* Back-Button und Karte verstecken */
+  .back-button {
+    display: none;
+  }
+
+  #card {
+    display: none;
+  }
+
+  /* Headline: Download-Button rechts */
+  .headline {
+    justify-content: flex-end;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .marginLeft {
+    margin-left: 0;
+    margin-right: 1em;
+    margin-top: 0.5em;
+  }
+
+  /* Container: aus fixed raus */
+  .container {
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 100%;
+    height: auto;
+    perspective: none;
+  }
+
+  /* Background: normaler Block-Fluss, kein Grid */
+  .background {
+    position: static;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+  }
+
+  /* Text zuerst, normal im Fluss */
+  .text {
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 2em 0;
+    text-align: left;
+    margin-top: 2em;
+    
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .big-letters {
+    font-size: 13px;
+    padding-bottom: 1em;
+  }
+
+  .wo-denn {
+    padding-top: 1em;
+  }
+
+  /* Bilder-Container: position überschreiben! */
+  .background > div:first-child {
+    position: static;
+    width: 100%;
+  }
+
+  /* Bilder-Section: kein Grid mehr, einfach untereinander */
+  .background-images {
+    position: static;   /* ← das war das Problem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+    width: 100%;
+  }
+
+  .background-images .hi {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .background-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Telefon-Wrapper */
+  .telefon-wrapper {
+    margin-right: 0;
+  }
+
+  .telefon-wrapper img {
+    width: 70px;
+    height: 68px;
+  }
+}
+
+.container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 70vw;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  transform: translate(-50%, -50%);
+  perspective: 1200px;
+}
+
+.
+
+
+/* ===================== */
+/* INDEX - MOBILE        */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  /* Alles auf der index.html verstecken */
+  body:not(.einzelansicht) .headline,
+  body:not(.einzelansicht) .layout {
+    display: none;
+  }
+
+  /* Blauer Hintergrund + zentrierter Text */
+  body:not(.einzelansicht)::after {
+    content: "watch me auf dem desktop";
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dddf4b;
+    font-family: Messina, sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 2em;
+  }
+}
+
+/* ===================== */
+/* LARGE DESKTOP (27")   */
+/* ===================== */
+
+
+
+  @media (min-width: 1800px) {
+
+  
+    
+
+  /* ... rest bleibt gleich */
+}
+
+  .background-images img {
+    width: 35em;
+  }
+
+  .text {
+    padding-left: 70px;
+  }
+
+  .text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .big-letters {
+    font-size: 18px;
+  }
+
+  .headline img {
+    width: 280px;
+  }
+
+  .marginLeft img {
+    width: 280px;
+  }
+
+  .telefon-wrapper img {
+    width: 130px;
+    height: 127px;
+  }
+
+  .back-button img {
+    width: 55px;
+  }
+
+  @media (min-width: 1800px) {
+
+  .container {
+    width: 55vw;
+    height: auto;
+    aspect-ratio: 3 / 2;
+  }
+
+  .layout {
+    max-width: calc(100vw - 10em);
+    gap: 5rem;
+  }
+
+  .layout img {
+    width: 300px;
+    height: 194px;
+
+  /* ... rest bleibt gleich */
+}
+
+  .layout img {
+    width: 220px;
+    height: 142px;
+  }

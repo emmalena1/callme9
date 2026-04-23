@@ -13,8 +13,6 @@
 
         <!-- verweis auf unser css -->
         <link rel="stylesheet" href="./assets/css/style.css">
-
-        <script src=“https://dervierteraum.org/connect”></script>
     </head>
     
     <body><!--
@@ -35,7 +33,7 @@
             <button id="toggleBrand" data-toggle="brand">Branddesign</button>
             <button id="toggleTypografie" data-toggle="typografie">Typografie</button>
             <button id="toggleFotografie" data-toggle="fotografie">Fotografie</button>
-            <button id="toggleZBM" data-toggle="zbm">ZBM</button>
+            <button id="toggleZBM" data-toggle="zbm">ZBM/Film</button>
             <button id="toggleMalerei" data-toggle="malerei">Malerei</button>
         </div>  
 
@@ -59,8 +57,7 @@
                         </div>
                     </div>
 
-                    <button>Index</button>
-                    <button>Raumplan</button>
+                
 
                     <button onclick="document.getElementById('overlay-programm').classList.add('aktiv')">Programm</button>
 
@@ -104,60 +101,50 @@
 
         <!-- Container für alle Bilder -->
         <section class="layout">
-            <div class="type"><a href="carl-kurtz.html"><img src="assets/media/carl-kurtz/carl-kurtz-titelbild.webp" class="img-1" alt="Carl Kurtz"></a></div>
-            <div class="typografie"><a href="julia-biedasiek.html"><img src="assets/media/julia-biedasiek/julia-biedasiek-titelbild-c-jana-konrad.webp" class="img-2"></a></div>
-            <div class="fotografie"><a href="nora-handsley.html"><img src="assets/media/nora-handsley/nora-handsley-titelbild.webp" class="img-3"></a></div>
-            <div class="zbm"><a href="tay-kirchner.html"><img src="assets/media/tay-kirchner/tay-kirchner-titelbild.webp" class="img-4"></a></div>
-            <div class="zbm"><a href="david-kienle.html"><img src="assets/media/david-kienle/david-kienle-titelbild.webp" class="img-5"></a></div>
-            <div class="fotografie"><a href="emily-hein.html"><img src="assets/media/emily-hein/emily-hein-titelbild.webp" class="img-6"></a></div>
-            <div class="malerei"><a href="tabea-mertens.html"><img src="assets/media/tabea-mertens/tabea-mertens-titelbild.webp" class="img-7"></a></div>
-            <div class="type"><a href="meret-lafin.html"><img src="assets/media/meret-lafin/meret-lafin-titelbild.webp" class="img-8"></a></div>
-            <div class="interactiondesign"><a href="fabian-stenzel.html"><img src="assets/media/fabian-stenzel/fabian-stenzel-titelbild.webp" class="img-9"></a></div>
-            <div class="typografie"><a href="alina-stegemann.html"><img src="assets/media/alina-stegemann/alina-stegemann-titelbild.webp" class="img-10"></a></div>
+            <div class="type"><a href="carl-kurtz.html"><img src="assets/media/JPEG/carl-kurtz-titelbild.jpg" class="img-1" alt="Carl Kurtz"></a></div>
+            <div class="typografie"><a href="julia-biedasiek.html"><img src="assets/media/JPEG/julia-biedasiek-titelbild-c-jana-konrad.jpg" class="img-2"></a></div>
+            <div class="fotografie"><a href="nora-handsley.html"><img src="assets/media/JPEG/nora-handsley-titelbild.jpg" class="img-3"></a></div>
+            <div class="zbm"><a href="tay-kirchner.html"><img src="assets/media/JPEG/tay-kirchner-titelbild.jpg" class="img-4"></a></div>
+            <div class="zbm"><a href="david-kienle.html"><img src="assets/media/JPEG/david-kienle-titelbild.jpg" class="img-5"></a></div>
+            <div class="fotografie"><a href="emily-hein.html"><img src="assets/media/JPEG/emily-hein-titelbild.jpg" class="img-6"></a></div>
+            <div class="malerei"><a href="tabea-mertens.html"><img src="assets/media/JPEG/tabea-mertens-titelbild.jpg" class="img-7"></a></div>
+            <div class="type"><a href="meret-lafin.html"><img src="assets/media/JPEG/meret-lafin-titelbild.jpg" class="img-8"></a></div>
+            <div class="interactiondesign"><a href="fabian-stenzel.html"><img src="assets/media/JPEG/fabian-stenzel-titelbild.jpg" class="img-9"></a></div>
+            <div class="typografie"><a href="alina-stegemann.html"><img src="assets/media/JPEG/alina-stegemann-titelbild.jpg" class="img-10"></a></div>
 
-            <div class="editorial"><a href="friederike-temme.html"><img src="assets/media/friederike-temme/friederike-temme-titelbild.webp" class="img-7"></a></div>
-            <div class="zbm"><a href="cindy-reiche.html"><img src="assets/media/cindy-reiche/cindy-reiche-titelbild.webp" class="img-6"></a></div>
-            <div class="typografie"><a href="saige-hippeli.html"><img src="assets/media/saige-hippeli/saige-hippeli-titelbild.webp" class="img-10"></a></div>
-            <div class="zbm"><a href="emma-levin.html"><img src="assets/media/emma-levin/emma-levin-titelbild.webp" class="img-8"></a></div>
-            <div class="zbm"><a href="silvia-schmidt.html"><img src="assets/media/silvia-schmidt/silvia-schmidt-titelbild.webp" class="img-2"></a></div>
-            <div class="zbm"><a href="sarah-roehlen.html"><img src="assets/media/sarah-roehlen/sarah-roehlen-titelbild.webp" class="img-4"></a></div>
-            <div class="malerei"><a href="laya-boeker.html"><img src="assets/media/laya-boeker/laya-boeker-titelbild.webp" class="img-7"></a></div>
-            <div class="typografie"><a href="simon-bode.html"><img src="assets/media/simon-bode/simon-bode-titelbild.png" class="img-4"></a></div>
-            <div class="typografie"><a href="saskia-hess.html"><img src="assets/media/saskia-hess/saskia-hess-titelbild.webp" class="img-9"></a></div>
-            <div class="zbm"><a href="felix-willnauer.html"><img src="assets/media/felix-willnauer/felix-willnauer-titelbild.png" class="img-2"></a></div>
+            <div class="editorial"><a href="friederike-temme.html"><img src="assets/media/JPEG/friederike-temme-titelbild.jpg" class="img-7"></a></div>
+            <div class="zbm"><a href="cindy-reiche.html"><img src="assets/media/JPEG/cindy-reiche-titelbild.jpg" class="img-6"></a></div>
+            <div class="typografie"><a href="saige-hippeli.html"><img src="assets/media/JPEG/saige-hippeli-titelbild.jpg" class="img-10"></a></div>
+            <div class="zbm"><a href="emma-levin.html"><img src="assets/media/JPEG/emma-levin-titelbild.jpg" class="img-8"></a></div>
+            <div class="zbm"><a href="silvia-schmidt.html"><img src="assets/media/JPEG/silvia-schmidt-titelbild.jpg" class="img-2"></a></div>
+            <div class="zbm"><a href="sarah-roehlen.html"><img src="assets/media/JPEG/sarah-roehlen-titelbild.jpg" class="img-4"></a></div>
+            <div class="malerei"><a href="laya-boeker.html"><img src="assets/media/JPEG/laya-boeker-titelbild.jpg" class="img-7"></a></div>
+            <div class="typografie"><a href="simon-bode.html"><img src="assets/media/JPEG/simon-bode-titelbild.jpg" class="img-4"></a></div>
+            <div class="typografie"><a href="saskia-hess.html"><img src="assets/media/JPEG/saskia-hess-titelbild.jpg" class="img-9"></a></div>
+            <div class="zbm"><a href="felix-willnauer.html"><img src="assets/media/JPEG/felix-willnauer-titelbild.jpg" class="img-2"></a></div>
 
-            <div class="typografie editorial"><img src="assets/media/typo-editorial-stegemann-alina.avif" class="img-4"></div>
-            <div class="typografie"><img src="assets/media/typo-hess-saskia.avif" class="img-2"></div>
-            <div class="zbm"><img src="assets/media/zbm-wiesenberg-giacomo.avif" class="img-7"></div>
-            <div class="editorial"><img src="assets/media/editorial-mercado-eliana.avif" class="img-1"></div>
-            <div class="typografie"><img src="assets/media/typo-konrad-jana.avif" class="img-6"></div>
-            <div class="zbm"><img src="assets/media/zbm-renner-leonie.avif" class="img-3"></div>
-            <div class="zbm"><img src="assets/media/zbm-levin-emma.avif" class="img-5"></div>
-            <div class="typografie editorial"><img src="assets/media/foto-langenhoff-jo.avif" class="img-1"></div>
-            <div class="typografie"><img src="assets/media/springub-enka1.png" class="img-3"></div>
-            <div class="typografie"><img src="assets/media/typo-hess-saskia.avif" class="img-2"></div>
+            <div class="editorial"><a href="aisha-lu-grosche.html"><img src="assets/media/JPEG/aisha-lu-Grosche-titelbild.jpg" class="img-4"></a></div>
+            <div class="malerei"><a href="finja.html"><img src="assets/media/JPEG/finja-titelbild.jpg" class="img-2"></a></div>
+            <div class="fotografie"><a href="jan-louis-hartung.html"><img src="assets/media/JPEG/Jan-Louis-Hartung-Titelbild.jpg" class="img-7"></a></div>
+            <div class="editorial"><a href="eliana.html"><img src="assets/media/JPEG/eliana-titelbild.jpg" class="img-1"></a></div>
+            <div class="fotografie"><a href="enka-springub.html"><img src="assets/media/JPEG/enka-springub-titelbild.jpg" class="img-6"></a></div>
+            <div class="fotografie"><a href="david.html"><img src="assets/media/JPEG/David-Titelbild.jpg" class="img-3"></a></div>
+            <div class="editorial"><a href="chiara-windler.html"><img src="assets/media/JPEG/Chiara-Windler-Titelbild.jpg" class="img-5"></a></div>
+            <div class="zbm"><a href="judith-seeger.html"><img src="assets/media/JPEG/Judith-Seeger-titelbild.jpg" class="img-1"></a></div>
+            <div class="typografie"><a href="jana-katharina-konrad.html"><img src="assets/media/JPEG/Jana-Katharina-Konrad-titelbild.jpg" class="img-3"></a></div>
+            <div class="fotografie"><a href="jo-langenhoff.html"><img src="assets/media/JPEG/JoLangenhoff-Titelbild.jpg" class="img-2"></a></div>
 
-            <div class="zbm"><a href="kaethebaduva.html"><img src="assets/media/david-kienle/david-kienle-1.webp" class="img-5" alt="Kaethe Baduva project portfolio piece, showcasing design work from April 23-26, 2026, part of the Frappant exhibition collection"></a></div>
-            <div class="fotografie"><img src="assets/media/foto-springub-enka.avif" class="img-6"></div>
-            <div class="zbm"><img src="assets/media/zbm-reiche-cindy.avif" class="img-7"></div>
-            <div class="malerei"><img src="assets/media/malerei-boeker-lara.avif" class="img-8"></div>
-            <div class="foto"><img src="assets/media/foto-hartung-jan-louis.avif" class="img-9"></div>
-            <div class="zbm"><img src="assets/media/zbm-roehlen-sarah-ann.avif" class="img-10"></div>
-            <div class="editorial"><img src="assets/media/typo-editorial-stegemann-alina.avif" class="img-1"></div>
-            <div class="foto"><img src="assets/media/foto-baatz-helena.avif" class="img-2"></div>
-            <div class="foto"><img src="assets/media/foto-handsley-nora.avif" class="img-3"></div>
-            <div class="foto"><img src="assets/media/foto-hein-emily.avif" class="img-4"></div>
-
-            <div class="type"><a href="carl-kurtz.html"><img src="assets/media/carl-kurtz/carl-kurtz-titelbild.webp" class="img-1" alt="Carl Kurtz"></a></div>
-            <div class="typografie"><a href="julia-biedasiek.html"><img src="assets/media/julia-biedasiek/julia-biedasiek-titelbild-c-jana-konrad.webp" class="img-2"></a></div>
-            <div class="fotografie"><a href="nora-handsley.html"><img src="assets/media/nora-handsley/nora-handsley-titelbild.webp" class="img-3"></a></div>
-            <div class="zbm"><a href="tay-kirchner.html"><img src="assets/media/tay-kirchner/tay-kirchner-titelbild.webp" class="img-4"></a></div>
-            <div class="zbm"><a href="david-kienle.html"><img src="assets/media/david-kienle/david-kienle-titelbild.webp" class="img-5"></a></div>
-            <div class="fotografie"><a href="emily-hein.html"><img src="assets/media/emily-hein/emily-hein-titelbild.webp" class="img-6"></a></div>
-            <div class="malerei"><a href="tabea-mertens.html"><img src="assets/media/tabea-mertens/tabea-mertens-titelbild.webp" class="img-7"></a></div>
-            <div class="type"><a href="meret-lafin.html"><img src="assets/media/meret-lafin/meret-lafin-titelbild.webp" class="img-8"></a></div>
-            <div class="interactiondesign"><a href="fabian-stenzel.html"><img src="assets/media/fabian-stenzel/fabian-stenzel-titelbild.webp" class="img-9"></a></div>
-            <div class="typografie"><a href="alina-stegemann.html"><img src="assets/media/alina-stegemann/alina-stegemann-titelbild.webp" class="img-10"></a></div>
+            <div class="zbm"><a href="leonie-renner.html"><img src="assets/media/JPEG/LeonieRenner-Titelbild.jpg" class="img-5"></a></div>
+            <div class="zbm"><a href="maria-maass.html"><img src="assets/media/JPEG/MariaMaass-titelbild.jpg" class="img-6"><a></div>
+            <div class="zbm"><a href="giacomo-wiesenberg.html"><img src="assets/media/JPEG/Giacomo-Wiesenberg-titelbild.jpg" class="img-7"></a></div>
+            <div class="type"><a href="lorenz-fackler.html"><img src="assets/media/JPEG/LorenzFackler-Titelbild.jpg" class="img-8"></a></div>
+            <div class="typografie"><a href="johann-koenig.html"><img src="assets/media/JPEG/JohannKoenig-titelbild.jpg" class="img-9"></a></div>
+            <div class="zbm"><a href="cecilia-luna-pohl.html"><img src="assets/media/JPEG/Cecilia-Luna-Pohl-titelbild.jpg" class="img-10"></a></div>
+            <div class="zbm"><a href="kaethe-baduva.html"><img src="assets/media/JPEG/kaethe-baduva-titelbild.jpg" class="img-1"></a></div>
+            <div class="zbm"><a href="nici-barabasch.html"><img src="assets/media/JPEG/nici-barabasch-titelbild.jpg" class="img-2"></a></div>
+            <div class="foto"><a href="teresa-halbreiter.html"><img src="assets/media/JPEG/Teresa-Halbreiter-titelbild.jpg" class="img-3"></a></div>
+            <div class="editorial"><a href="rasmus-von-goetz.html"><img src="assets/media/JPEG/rasmus-von-goetz-titelbild.jpg" class="img-4"></a></div>
+            <div class="typografie"><a href="vanessa-köwing.html"><img src="assets/media/vanessa-koewing/vanessa-koewing-titelbild.jpeg" class="img-8"></a></div>
 
 
           </section>
