@@ -482,7 +482,7 @@ td {
 /* MOBILE RESPONSIVE     */
 /* ===================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
   /* Scrollen erlauben */
   .einzelansicht {
