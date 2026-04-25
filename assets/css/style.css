@@ -678,6 +678,10 @@ td {
   }
 }
 
+* {
+  cursor: url("ccursor.png"), auto !important;
+}
+
 
 
 
